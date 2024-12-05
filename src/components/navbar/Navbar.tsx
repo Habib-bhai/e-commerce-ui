@@ -33,7 +33,7 @@ export default function Navbar() {
                 </div>
             </div>
 
-            <div className='flex justify-evenly items-center w-full border-b h-24 border-gray-700'>
+            <div className='flex justify-evenly items-center w-full border-b h-24 '>
                 <Image src={"/images/navbar/Logo.png"} alt='logo' height={150} width={200} className=' object-contain w-[150px] h-[80px] lg:w-[200px] lg:h-[150px]' />
 
                 <div className='hidden lg:flex justify-center items-center gap-10'>
