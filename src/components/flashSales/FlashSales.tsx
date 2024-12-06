@@ -6,6 +6,7 @@ import {
     CarouselPrevious,
 } from "@/components/ui/carousel"
 import ItemCard from "../itemCard/ItemCard"
+import { Button } from "../ui/button"
 
 
 
@@ -83,6 +84,10 @@ export default function FlashSales() {
                 <CarouselPrevious />
                 <CarouselNext />
             </Carousel>
+
+        <div className="w-full flex justify-center items-center mt-5 mb-16"> 
+                <button className="w-[234px] h-[56px] bg-[#DB4444] text-white text-[16px] rounded-sm " >View All Products</button>
+        </div>
 
         </div>
     )

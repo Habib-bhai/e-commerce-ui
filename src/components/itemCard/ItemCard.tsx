@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function ItemCard({ reviews,image, discount,title, discountedPrice, originalPrice}:{image:string, discount: number, discountedPrice:number , originalPrice:number, title:string, reviews: number}) {
     return (
         <div className="w-[270px] h-[350px]">
-            <div className="bg-[#fafafa] relative flex  justify-center items-center w-full h-[250px]">
+            <div className=" bg-[#fafafa] relative flex  justify-center items-center w-full h-[250px] group">
                 {/* meta info and image */}
                 <div className="px-2 absolute top-0 w-full flex justify-between items-center ">
                     <div className="text-white  text-[12px] w-[45px] h-[26px] bg-[#DB4444] rounded-sm flex justify-center items-center">
@@ -19,6 +19,10 @@ export default function ItemCard({ reviews,image, discount,title, discountedPric
 
                 {/*image  */}
                 <Image src={`/images/carousel_products/${image}`} alt="product" height={150} width={150} />
+
+                <div className="w-full h-[50px] bg-black opacity-0 group-hover:opacity-100 flex justify-center items-center text-white absolute bottom-0  ">
+                    Add to Cart
+                </div>
             </div>
 
             <div className="mt-2 w-full flex flex-col justify-center items-start">
