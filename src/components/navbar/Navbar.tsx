@@ -56,6 +56,7 @@ export default function Navbar() {
                     </div>
 
                     <Image src={"/images/navbar/Cart.svg"} alt='cart' height={40} width={40} className='block lg:hidden'/>
+                    
                     <DropdownMenu >
                         <DropdownMenuTrigger className='relative '>
                             <Image src={"/images/navbar/user.png"} alt='user' height={40} width={40} />
