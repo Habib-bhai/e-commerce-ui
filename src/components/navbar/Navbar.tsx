@@ -37,10 +37,10 @@ export default function Navbar() {
                 <Image src={"/images/navbar/Logo.png"} alt='logo' height={150} width={200} className=' object-contain w-[150px] h-[80px] lg:w-[200px] lg:h-[150px]' />
 
                 <div className='hidden lg:flex justify-center items-center gap-10'>
-                    <p className='text-lg'> Home</p>
-                    <p className='text-lg'> Contact</p>
-                    <p className='text-lg'> About</p>
-                    <p className='text-lg'> SignUp</p>
+                    <Link href={'/'} className='text-lg'> Home</Link>
+                    <Link href={'/contact'} className='text-lg'> Contact</Link>
+                    <Link href={"/about"} className='text-lg'> About</Link>
+                    <Link href={"/signup"} className='text-lg'> SignUp</Link>
                 </div>
 
                 <div className='flex justify-center items-center gap-8 '>
@@ -113,11 +113,12 @@ export default function Navbar() {
                                         <Image src={"/images/navbar/component.svg"} alt='search icon' height={30} width={30}  />
                                     </div>
                                     <Link href="/" className='font-semibold text-3xl mb-8 text-white'>Home</Link>
-                                    <Link href="/" className='font-semibold text-3xl mb-8 text-white'>Contact</Link>
-                                    <Link href="/" className='font-semibold text-3xl mb-8 text-white'>About</Link>
-                                    <Link href="/" className='font-semibold text-3xl mb-8 text-white'>Signup</Link>
-                                    <Link href="/" className='font-semibold text-3xl mb-8 text-white'>Wish List</Link>
-                                    <Link href="/" className='font-semibold text-3xl mb-8 text-white'>Wish List</Link>
+                                    <Link href="/contact" className='font-semibold text-3xl mb-8 text-white'>Contact</Link>
+                                    <Link href="/about" className='font-semibold text-3xl mb-8 text-white'>About</Link>
+                                    <Link href="/signup" className='font-semibold text-3xl mb-8 text-white'>Signup</Link>
+                                    <Link href="/login" className='font-semibold text-3xl mb-8 text-white'>Login</Link>
+                                    <Link href="/wishlist" className='font-semibold text-3xl mb-8 text-white'>Wish List</Link>
+                                    
                                     
                             
                             </SheetContent>
