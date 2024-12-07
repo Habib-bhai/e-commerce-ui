@@ -6,7 +6,7 @@ import {
     CarouselPrevious,
 } from "@/components/ui/carousel"
 import ItemCard from "../itemCard/ItemCard"
-import { Button } from "../ui/button"
+
 
 
 
@@ -55,39 +55,42 @@ export default function FlashSales() {
                 <CarouselContent>
                     <CarouselItem className="ml-[10%] md:ml-0 mb-10 md:mb-0 min-[510px]:basis-1/2 min-[590px]:basis-[40%] md:basis-1/4 ">
 
-                        <ItemCard image="carousel_item4.png" title="HAVIT HV-G92 Gamepad" originalPrice={160} discountedPrice={120} discount={40} reviews={86}/>
+                        <ItemCard display="flex" image="carousel_products/carousel_item4.png" title="HAVIT HV-G92 Gamepad" originalPrice={160} discountedPrice={120} discount={40} reviews={86}/>
 
                     </CarouselItem>
                     <CarouselItem className="ml-[10%] md:ml-0 mb-10 md:mb-0 min-[510px]:basis-1/2 min-[590px]:basis-[40%] md:basis-1/4 ">
                     
-                        <ItemCard image="carousel_item1.png" title="S-Series Comfort Chair " originalPrice={400} discountedPrice={375} discount={25} reviews={99} />
+                        <ItemCard display="flex" image="carousel_products/carousel_item1.png" title="S-Series Comfort Chair " originalPrice={400} discountedPrice={375} discount={25} reviews={99} />
 
                     </CarouselItem>
                     <CarouselItem className="ml-[10%] md:ml-0 mb-10 md:mb-0 min-[510px]:basis-1/2 min-[590px]:basis-[40%] md:basis-1/4 ">
 
-                        <ItemCard image="carouse_item2.png" title="IPS LCD Gaming Monitor" originalPrice={400} discountedPrice={375} discount={25} reviews={99}/>
+                        <ItemCard display="flex" image="carousel_products/carouse_item2.png" title="IPS LCD Gaming Monitor" originalPrice={400} discountedPrice={375} discount={25} reviews={99}/>
                     </CarouselItem>
 
                     <CarouselItem className="ml-[10%] md:ml-0 mb-10 md:mb-0 min-[510px]:basis-1/2 min-[590px]:basis-[40%] md:basis-1/4 ">
 
-                        <ItemCard image="carouse_item3.png" title="AK-900 Wired Keyboard" originalPrice={1160} discountedPrice={960} discount={35} reviews={75} />
+                        <ItemCard display="flex" image="carousel_products/carouse_item3.png" title="AK-900 Wired Keyboard" originalPrice={1160} discountedPrice={960} discount={35} reviews={75} />
                     </CarouselItem>
 
                     <CarouselItem className="ml-[10%] md:ml-0 mb-10 md:mb-0 min-[510px]:basis-1/3 min-[590px]:basis-[40%] md:basis-1/4 ">
-                        <ItemCard image="carousel_item4.png" title="HAVIT HV-G92 Gamepad" originalPrice={160} discountedPrice={120} discount={40} reviews={86} />
+                        <ItemCard display="flex" image="carousel_products/carousel_item4.png" title="HAVIT HV-G92 Gamepad" originalPrice={160} discountedPrice={120} discount={40} reviews={86} />
                     </CarouselItem>
 
                     <CarouselItem className="ml-[10%] md:ml-0 mb-10 md:mb-0 min-[510px]:basis-1/2 min-[590px]:basis-[40%] md:basis-1/4 ">
-                        <ItemCard image="carouse_item3.png" title="AK-900 Wired Keyboard" originalPrice={1160} discountedPrice={960} discount={35} reviews={75} />
+                        <ItemCard display="flex" image="carousel_products/carouse_item3.png" title="AK-900 Wired Keyboard" originalPrice={1160} discountedPrice={960} discount={35} reviews={75} />
                     </CarouselItem>
                 </CarouselContent>
                 <CarouselPrevious />
                 <CarouselNext />
             </Carousel>
 
-        <div className="w-full flex justify-center items-center mt-5 mb-16"> 
+        <div className="w-full flex justify-center items-center mt-5 "> 
                 <button className="w-[234px] h-[56px] bg-[#DB4444] text-white text-[16px] rounded-sm " >View All Products</button>
         </div>
+
+
+        <p className="ml-10 h-[1px]  bg-[#ececec] mt-14 mb-20 w-[92%]"></p>
 
         </div>
     )
